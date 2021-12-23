@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  nginx:
+    build: 
+      dockerfile: Dockerfile
+      context: nginx
+    container_name: nginx
+
+    # ports:
+    #   - 8080:80
+    volumes:
+      - /Users/luciann/Desktop/training/docker/nginx:/var/www/html/
+
+
+
+  linux:
+    build: 
+      dockerfile: Dockerfile
+      context: linux
+      
+    container_name: nettest
+
+    command: /bin/bash -c 'bash run.sh nginx:80 1'
+    
