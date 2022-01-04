@@ -1,5 +1,5 @@
 FROM Debian:stable
-LABEL author:luka
+LABEL maintainer="Luka Todua"
 LABEL version=training
 
 RUN apt update && \
