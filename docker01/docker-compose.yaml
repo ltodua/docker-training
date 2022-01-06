@@ -10,7 +10,7 @@ services:
     # ports:
     #   - 8080:80
     volumes:
-      - /Users/luciann/Desktop/training/docker/nginx:/var/www/html/
+      - /Users/luciann/Desktop/training/docker-training/docker01/nginx:/var/www/html/
 
 
 
